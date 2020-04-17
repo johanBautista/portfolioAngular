@@ -1,9 +1,8 @@
 {
-  "titulo-logo":"Johan Bautista",
+  "titulo_logo":"Johan Bautista",
   "email":"jsbparra@gmail.com",
-  "tituloProyecto":"nombreProyecto",
-  "imagenProyecto":"pictureProyecto",
-  "linkProyecto":"urlProyecto",
-  "infoProyecto":"descriptionProyecto",
-  "stackProyecto":"stack"
+  "github":"https://github.com/johanBautista",
+  "linkedin":"https://www.linkedin.com/in/johan-bautista-parra/",
+  "behance":"https://www.behance.net/johansbautist",
+  "telefono": "684-341-685"
   }
