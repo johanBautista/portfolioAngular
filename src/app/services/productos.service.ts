@@ -24,4 +24,9 @@ export class ProductosService {
         }, 1000);
       });
   }
+
+  getProducto(id: string) {
+    return this.http
+      .get(`https://dev-johan.firebaseio.com/productos/${id}.json`);
+  }
 }
