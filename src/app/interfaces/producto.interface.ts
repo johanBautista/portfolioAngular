@@ -1,4 +1,4 @@
-export interface InfoProducto {
+export interface Producto {
   categoria: string;
   cod: string;
   titulo: string;

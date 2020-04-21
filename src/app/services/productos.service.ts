@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { InfoProducto } from '../interfaces/info-producto.interface';
+import { Producto } from '../interfaces/producto.interface';
 
 @Injectable({
   providedIn: 'root',
 })
-export class InfoProductosService {
+export class ProductosService {
   cargando = true;
-  productos: InfoProducto[] = [];
+  productos: Producto[] = [];
 
   constructor(private http: HttpClient) {
     this.cargarProductos();
@@ -16,10 +16,12 @@ export class InfoProductosService {
   private cargarProductos() {
     this.http
       .get('https://dev-johan.firebaseio.com/productos_idx.json')
-      .subscribe((resp: InfoProducto[]) => {
+      .subscribe((resp: Producto[]) => {
         console.log(resp);
         this.productos = resp;
-        // this.cargando = false;
+        setTimeout(() => {
+          this.cargando = false;
+        }, 1000);
       });
   }
 }

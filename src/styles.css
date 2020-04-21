@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+/* svg Color del Loading */
+svg path,
+svg rect {
+  fill: black;
+}
 
+/* animacion de imagenes  */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -17,7 +23,6 @@
     animation-iteration-count: 1 !important;
   }
 }
-
 
 @-webkit-keyframes fadeIn {
   from {
