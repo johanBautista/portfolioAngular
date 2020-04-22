@@ -31,11 +31,11 @@ export class InfoPaginaService {
   private cargarEquipo() {
     this.http.get('https://dev-johan.firebaseio.com/equipo.json').subscribe((resp: any[]) => {
       this.equipo = resp;
-      console.log(resp);
+      // console.log(resp);
     });
   }
 
-  
+
 }
 
 

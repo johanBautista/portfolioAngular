@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SearchComponent } from './pages/search/search.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'item/:id', component: ItemComponent },
+  { path: 'search/:termino', component: SearchComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
